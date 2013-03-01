@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Softy::VERSION
   gem.authors       = ["Ryan Oberholzer"]
   gem.email         = ["ryan@platform45.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Simple soft delete in ActiveRecord models}
+  gem.summary       = %q{Adds soft delete functionality to your ActiveRecord models by overwriting destroy and delete methods. All callbacks still work as expected!}
+  gem.homepage      = "https://github.com/ryanza/softy"
   gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
