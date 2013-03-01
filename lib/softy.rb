@@ -4,8 +4,8 @@ module Softy
   extend ActiveSupport::Concern
 
   included do |base|
-    base.alias_method :destroy!, :destroy
-    base.alias_method :delete!, :delete
+    base.send :alias_method, :destroy!, :destroy
+    base.send :alias_method, :delete!, :delete
     base.default_scope conditions: { deleted_at: nil }
   end
 
