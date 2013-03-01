@@ -35,7 +35,7 @@ module Softy
   end
   alias_method :deleted?, :destroyed?
 
-  class ClassMethods
+  module ClassMethods
     def only_deleted
       unscoped.where("#{self.table_name}.deleted_at is not null")
     end
