@@ -1,6 +1,6 @@
 # Softy
 
-TODO: Write a gem description
+Softy is a soft delete gem which allows safe deletion of ActiveRecord objects.
 
 ## Installation
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run the rake task to generate the softy migration:
+
+    $ rails g softy:migration MODEL_NAME
+    
+Include softy in the model you plan on using it in:
+
+    class Model; include Softy; end
+    
+Thats all you need to get up and running. 
 
 ## Contributing
 
